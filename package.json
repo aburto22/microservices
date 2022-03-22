@@ -1,0 +1,25 @@
+{
+  "name": "microservices",
+  "version": "1.0.0",
+  "description": "A simple website to show express microservices",
+  "engines": {
+    "node": "16.x"
+  },
+  "scripts": {
+    "start": "cd api && npm start",
+    "install-server": "cd api && npm install",
+    "install-client": "cd client && npm install",
+    "prebuild": "npm run install-server && npm run install-client",
+    "build": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aburto22/microservices.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aburto22/microservices/issues"
+  },
+  "homepage": "https://github.com/aburto22/microservices#readme"
+}
